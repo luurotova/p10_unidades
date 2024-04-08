@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidades</title>
+</head>
+
+<body>
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 600px;
+        }
+
+        p {
+            font-size: 40px;
+            /*width: 500px; esto no es responsive */
+            /*width: 50%; el porcentaje es responsive, hace referencia al tanto por ciento del padre*/
+            /*width: 100vw; vh  hace referencia al viewport (tamano de la pantalla)*/
+            /*width: 50vmin; hace referencia al tamaño minimo del viewport (vimax es lo mismo pero el tamaño maximo)*/
+            /*width: calc(100% - 40px); para hacer calculos*/
+            font-size: 1.5rem;/*rem se usa tamaños de fuentes; multimplica por 16 (tamañano standar de escritura en html) o segun nosotros le indiquemos (body)*/
+            padding: 1em;/*hace referencia al tamaño de letra de mi elemento padre */
+            /*Color*/
+            background-color: #FF000050/*con hexadecimal, los ultimos hacen referencia a la opacidad*/;
+            background-color: rgb(255 155 67);
+            background-color: rgba (255, 155, 67, 0.5); /*El ultimo numero hace referenca a la opacidad*/
+            background-color: hsl(176, 100%, 50%); /*Color, saturacion y luminosidad (en ese orden)*/
+            background-color: hsla(126, 100%, 50%, 10%); /*Color, saturacion, luminosidad y opacidad (en ese orden)*/
+            
+
+        }
+
+        @media screen and (max-width: 600px) {
+            html {
+                font-size: 200%;
+            }
+            
+        }
+    </style>
+    <p>Estoy probando las unidades</p>
+    <p>Estoy probando las unidades</p>
+    <p>Estoy probando las unidades</p>
+    <p>Estoy probando las unidades</p>
+    <p>Estoy probando las unidades</p>
+</body>
+
+</html>
